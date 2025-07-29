@@ -234,6 +234,9 @@ app.post("/api/payment3", async (req, res) => {
     res.status(500).json({ error: "Erreur lors de la création du paiement." });
   }
 });
+app.get("/", (req, res) => {
+  res.send("Bienvenue sur l’API Solution Confidence !");
+});
 
 // Serveur
 const PORT = process.env.PORT || 3000;
